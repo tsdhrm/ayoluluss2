@@ -27,9 +27,10 @@ class Dataset:
             if data == 'HRF':
                 self.select_hrf(data)
             else:
-                self.select_dgsrm()
+                self.select_dgsrm(data)
 
     def select_hrf(self, data)->None:
+        pass
         regexcompiler = re.compile('[._]')
         expected_label = ['g', 'h']
         posneg = [self.POSITIVE_DIR, self.NEGATIVE_DIR]
@@ -47,5 +48,8 @@ class Dataset:
                             .join(posneg[j], filename))
                     i+=1
 
-    def select_dgsrm(self):
-        print('Hello world!')
+    def select_dgsrm(self, data)->None:
+        for root, dirs in os.walk(self.DATASET_DIR[data]):
+            for dir in os.walk(dirs):
+                print(dir)
+            break
