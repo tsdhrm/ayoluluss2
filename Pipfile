@@ -9,6 +9,7 @@ scikit-image = "*"
 opencv-python = "*"
 ipykernel = "*"
 matplotlib = "*"
+shapely = "*"
 
 [dev-packages]
 
