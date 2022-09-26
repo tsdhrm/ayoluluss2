@@ -12,6 +12,7 @@ matplotlib = "*"
 shapely = "*"
 pipfile = "*"
 jupyterlab = "*"
+pandas = "*"
 
 [dev-packages]
 
