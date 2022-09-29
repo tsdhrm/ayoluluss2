@@ -13,6 +13,7 @@ shapely = "*"
 pipfile = "*"
 jupyterlab = "*"
 pandas = "*"
+tensorflow = "*"
 
 [dev-packages]
 
